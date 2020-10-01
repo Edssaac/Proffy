@@ -2,6 +2,7 @@
 <img src="src/logo@2x.png" width='250'>
   
 Proffy: A ponte entre alunos e professores 📚
+</div>
 
 ## Sobre
 
