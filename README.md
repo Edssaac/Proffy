@@ -19,6 +19,12 @@ Essa aplicação foi realizada durante a Next **Level Week #2**, projeto da [Roc
 -  [Express](https://expressjs.com/)
 
 
+## Como usar?
+
+```
+npm run dev
+```
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
