@@ -4,9 +4,9 @@ const proffys = [
         name: 'Edssaac', 
         avatar: 'https://avatars2.githubusercontent.com/u/65103163?s=460&u=524b27239b2c99eaa44e175c0791bd220a871bd7&v=4', 
         whatsapp: '15997564578', 
-        bio: 'sbatatatatatatatatop', 
+        bio: 'Aqui reside uma bela descrição.', 
         subject: 'Programação', 
-        cost: 'koakso', 
+        cost: '28,79', 
         weekday: [0], 
         time_from: [201], 
         time_to: [1891] 
@@ -15,9 +15,9 @@ const proffys = [
         name: 'Edssaac', 
         avatar: 'https://avatars2.githubusercontent.com/u/65103163?s=460&u=524b27239b2c99eaa44e175c0791bd220a871bd7&v=4', 
         whatsapp: '15997564578', 
-        bio: 'sbatatatatatatatatop', 
+        bio: 'Podemos ver neste local mais uma maravilhosa descrição.', 
         subject: 'Programação', 
-        cost: 'koakso', 
+        cost: '55,04', 
         weekday: [0], 
         time_from: [201], 
         time_to: [1891] 
@@ -25,15 +25,18 @@ const proffys = [
 ]
 
 const subjects = [
+    "Administração",
     "Artes",
     "Biologia",
     "Ciências",
     "Educação Física",
+    "Engenharias",
     "Física",
     "Geografia",
     "História",
     "Matemática",
     "Português",
+    "Programação",
     "Química",
 ]
 
