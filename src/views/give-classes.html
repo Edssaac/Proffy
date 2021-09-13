@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#8257E5">
 
     <title>Proffy</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../../public/images/favicon.png" type="image/png">
 
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/partials/header.css">
-    <link rel="stylesheet" href="styles/partials/forms.css">
-    <link rel="stylesheet" href="styles/partials/page-give-classes.css">
-
+    <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/partials/header.css">
+    <link rel="stylesheet" href="../../public/styles/partials/forms.css">
+    <link rel="stylesheet" href="../../public/styles/partials/page-give-classes.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <script src="scripts/addField.js" defer></script>
-
+    <script src="../../public/scripts/addField.js" defer></script>
 </head>
 
 <body id="page-give-classes">
@@ -25,14 +24,14 @@
     <div id="container">
         <header class="page-header">
             <div class="top-bar-container">
-                <a href="/">
-                    <img src="images/icons/back.svg" alt="back">
+                <a href="./index.html">
+                    <img src="../../public/images/icons/back.svg" alt="back">
                 </a>
-                <img src="images/logo.svg" alt="Proffy">
+                <img src="../../public/images/logo.svg" alt="Proffy">
             </div>
-                <div class="header-content">
-                    <strong>Que aulas incríveis você quer dar?</strong>
-                    <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+            <div class="header-content">
+                <strong>Que aulas incríveis você quer dar?</strong>
+                <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
             </div>
         </header>
 
@@ -67,11 +66,24 @@
                         <select name="subject" id="subject" required>
                             <option value="">Selecione uma Opção</option>
 
-                            {%for subject in subjects %}
-                                <option value="{{loop.index}}" >
-                                    {{subject}}
-                                </option>
-                            {%endfor%}
+                            <!-- {%for subject in subjects %}
+                            <option value="{{loop.index}}">
+                                {{subject}}
+                            </option>
+                            {%endfor%} -->
+
+                            <option value="">Administração</option>
+                            <option value="">Artes</option>
+                            <option value="">Biologia</option>
+                            <option value="">Ciências</option>
+                            <option value="">Educação Física</option>
+                            <option value="">Engenharias</option>
+                            <option value="">Física</option>
+                            <option value="">Geografia</option>
+                            <option value="">História</option>
+                            <option value="">Matemática</option>
+                            <option value="">Português</option>
+                            <option value="">Programação</option>
 
                         </select>
                     </div>
@@ -82,7 +94,7 @@
                 </fieldset>
 
                 <fieldset id="schedule-items">
-                    <legend>Horários  disponíveis
+                    <legend>Horários disponíveis
                         <button type="button" id="add-time">+ Novo Horário</button>
                     </legend>
 
@@ -92,11 +104,19 @@
                             <select name="weekday[]" required>
                                 <option value="">Selecione uma opção</option>
 
-                                {%for weekday in weekdays %}
-                                    <option value="{{loop.index}}" >
-                                        {{weekday}}
-                                    </option>
-                                {%endfor%}
+                                <!-- {%for weekday in weekdays %}
+                                <option value="{{loop.index}}">
+                                    {{weekday}}
+                                </option>
+                                {%endfor%} -->
+
+                                <option value="">Domingo</option>
+                                <option value="">Segunda-Feira</option>
+                                <option value="">Terça-Feira</option>
+                                <option value="">Quarta-Feira</option>
+                                <option value="">Quinta-Feira</option>
+                                <option value="">Sexta-Feira</option>
+                                <option value="">Sábado</option>
 
                             </select>
                         </div>
@@ -116,7 +136,7 @@
 
             <footer>
                 <p>
-                    <img src="images/icons/warning.svg" alt="warning">
+                    <img src="../../public/images/icons/warning.svg" alt="warning">
                     Importante! <br>
                     Preencha todos os dados.
                 </p>
@@ -124,6 +144,7 @@
             </footer>
         </main>
     </div>
-    
+
 </body>
+
 </html>

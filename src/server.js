@@ -58,11 +58,11 @@ function getSubject(subjectNumber) {
 }
 
 function pageLanding(req, res) {
-    return res.render('home.html')
+    return res.render('./views/home.html')
 }
 function pageStudy(req, res) {
     const filters = req.query
-    return res.render('study.html', { proffys, filters, subjects, weekdays })
+    return res.render('./views/study.html', { proffys, filters, subjects, weekdays })
 }
 function pageGiveClasses(req, res) {
     const data = req.query
@@ -76,10 +76,10 @@ function pageGiveClasses(req, res) {
         proffys.push(data)
 
         // E mudar de página
-        return res.redirect('/study')
+        return res.redirect('./views/study')
 
     } else { // Se não houverem dados
-        return res.render('give-classes.html', { subjects, weekdays })
+        return res.render('./views/give-classes.html', { subjects, weekdays })
     }
 
 }
